@@ -5,15 +5,22 @@ This is a mirror of the AUR dcc-git package:
 
 ## Installation
 
-Using an AUR helper, e.g. [yay](https://github.com/Jguer/yay)
+Using an AUR helper, e.g. [yay](https://github.com/Jguer/yay):
 ```
 yay -S dcc-git
 ```
 
-Using makepkg:
+Installing directly from AUR:
 ```
-git clone --single-branch --branch aur https://github.com/nktnet1/dcc
-cd dcc
+git clone https://aur.archlinux.org/dcc-git.git
+cd dcc-git
+makepkg -si
+```
+
+Installing from this GitHub repository:
+```
+git clone https://github.com/nktnet1/dcc-aur
+cd dcc-aur
 makepkg -si
 ```
 
