@@ -14,12 +14,12 @@ source=("git+$url")
 sha256sums=('SKIP')
 
 pkgver() {
-	cd dcc
-	printf "2.34.r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+    cd dcc
+    printf "2.34.r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 build() {
-	cd dcc
+    cd dcc
     make
     help2man --include=lib/help2man_include.txt ./dcc > dcc.1
 }
